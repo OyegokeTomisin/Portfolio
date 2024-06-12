@@ -12,10 +12,11 @@ struct WorkHistoryRow: View {
     let workHistory: WorkExperienceItem
     
     var body: some View {
+        
         WorkHistoryHeader(date: workHistory.date, title1: workHistory.title, title2: workHistory.title2, imageName: workHistory.image)
         
-        
         VStack(alignment: .leading, spacing: 10) {
+            
             Text(workHistory.description)
             
             ForEach(workHistory.workItems, id: \.self) { item in

@@ -10,6 +10,7 @@ import SwiftUI
 struct WorkHistoryView: View {
     
     let workHistory = DummyData.workData
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {

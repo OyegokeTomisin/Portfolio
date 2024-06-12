@@ -11,7 +11,7 @@ import SwiftUI
 struct PortfolioProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            WorkHistoryView()
+            HomeView()
         }
     }
 }
