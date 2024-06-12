@@ -31,7 +31,7 @@ struct WorkHistorySlider: View {
                             .foregroundStyle(Color.gray)
                             .font(.caption2)
                     }
-                    .padding(10)
+                    .padding(15)
                 }
             }
         }
