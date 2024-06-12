@@ -11,6 +11,10 @@
 		94A9891B2C1971DC0084ECBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A9891A2C1971DC0084ECBD /* Assets.xcassets */; };
 		94A9891E2C1971DC0084ECBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A9891D2C1971DC0084ECBD /* Preview Assets.xcassets */; };
 		94A9892D2C1974DB0084ECBD /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9892C2C1974DB0084ECBD /* RootView.swift */; };
+		94A989312C1988510084ECBD /* WorkHistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A989302C1988510084ECBD /* WorkHistoryRow.swift */; };
+		94A989332C1992090084ECBD /* WorkHistoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A989322C1992090084ECBD /* WorkHistoryHeader.swift */; };
+		94A989372C1995A50084ECBD /* WorkHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A989362C1995A50084ECBD /* WorkHistoryView.swift */; };
+		94A989392C1997AA0084ECBD /* WorkExperienceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A989382C1997AA0084ECBD /* WorkExperienceItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		94A9891A2C1971DC0084ECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A9891D2C1971DC0084ECBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A9892C2C1974DB0084ECBD /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		94A989302C1988510084ECBD /* WorkHistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryRow.swift; sourceTree = "<group>"; };
+		94A989322C1992090084ECBD /* WorkHistoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryHeader.swift; sourceTree = "<group>"; };
+		94A989362C1995A50084ECBD /* WorkHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryView.swift; sourceTree = "<group>"; };
+		94A989382C1997AA0084ECBD /* WorkExperienceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 			children = (
 				94A989162C1971DB0084ECBD /* PortfolioProjectApp.swift */,
 				94A9892C2C1974DB0084ECBD /* RootView.swift */,
+				94A9893B2C19A4300084ECBD /* Work History View */,
+				94A9893A2C19A3B00084ECBD /* Model */,
 				94A9891A2C1971DC0084ECBD /* Assets.xcassets */,
 				94A9891C2C1971DC0084ECBD /* Preview Content */,
 			);
@@ -65,6 +75,24 @@
 				94A9891D2C1971DC0084ECBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94A9893A2C19A3B00084ECBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94A989382C1997AA0084ECBD /* WorkExperienceItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94A9893B2C19A4300084ECBD /* Work History View */ = {
+			isa = PBXGroup;
+			children = (
+				94A989302C1988510084ECBD /* WorkHistoryRow.swift */,
+				94A989362C1995A50084ECBD /* WorkHistoryView.swift */,
+				94A989322C1992090084ECBD /* WorkHistoryHeader.swift */,
+			);
+			path = "Work History View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A989332C1992090084ECBD /* WorkHistoryHeader.swift in Sources */,
 				94A989172C1971DB0084ECBD /* PortfolioProjectApp.swift in Sources */,
+				94A989372C1995A50084ECBD /* WorkHistoryView.swift in Sources */,
 				94A9892D2C1974DB0084ECBD /* RootView.swift in Sources */,
+				94A989312C1988510084ECBD /* WorkHistoryRow.swift in Sources */,
+				94A989392C1997AA0084ECBD /* WorkExperienceItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
