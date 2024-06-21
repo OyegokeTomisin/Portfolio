@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct PortfolioProjectApp: App {
+    
+    @State var isLandingPage: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            if isLandingPage {
+                RootView(isLandingPage: $isLandingPage)
+            } else {
+                HomeView()
+            }
         }
     }
 }

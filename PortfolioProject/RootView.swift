@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RootView: View {
+    
+    @Binding var isLandingPage: Bool
+    
     var body: some View {
         ZStack {
             
@@ -30,7 +33,9 @@ struct RootView: View {
                     .font(.title2)
                     .foregroundColor(.gray)
                 
-                Button(action: { }, label: {
+                Button(action: {
+                    isLandingPage.toggle()
+                }, label: {
                     Image(systemName: "arrowshape.zigzag.forward.fill")
                         .font(.title3)
                         .foregroundColor(Color.themeOrange)
@@ -48,5 +53,5 @@ struct RootView: View {
 
 
 #Preview {
-    RootView()
+    RootView(isLandingPage: .constant(false))
 }
