@@ -19,6 +19,9 @@ struct WorkHistoryView: View {
                 }
                 .padding(.horizontal)
             }
+            .padding(.top, 20)
+            .navigationTitle("Work History")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

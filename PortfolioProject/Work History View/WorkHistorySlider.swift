@@ -19,19 +19,26 @@ struct WorkHistorySlider: View {
                 
                 ForEach(workHistory, id: \.self) { item in
                     
-                    VStack(spacing: 10) {
-                        Image(item.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 60)
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
-                            .shadow(radius: 5)
+                    NavigationLink(destination: {
                         
-                        Text(item.date)
-                            .foregroundStyle(Color.gray)
-                            .font(.caption2)
+                        Text("Hello Detail")
+                        
+                    }) {
+                        
+                        VStack(spacing: 10) {
+                            Image(item.image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 60)
+                                .clipShape(RoundedRectangle(cornerRadius: 5))
+                                .shadow(radius: 5)
+                            
+                            Text(item.date)
+                                .foregroundStyle(Color.gray)
+                                .font(.caption2)
+                        }
+                        .padding(15)
                     }
-                    .padding(15)
                 }
             }
         }
