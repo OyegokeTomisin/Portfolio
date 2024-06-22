@@ -90,10 +90,23 @@ struct HomeView: View {
                         
                         WorkHistorySlider()
                     }
+                    
+                    VStack {
+                        HStack {
+                            Text("Articles")
+                                .font(.callout)
+                                .bold()
+                            
+                            Spacer()
+                        }
+                        
+                        ArticleView()
+                    }
+                    .padding(.horizontal)
                 }
             }
             .ignoresSafeArea(.all)
-            .navigationTitle("Navigation")
+            .navigationTitle("")
         }
     }
 }
